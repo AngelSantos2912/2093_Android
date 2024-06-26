@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">2093</string>
+    <array name="Genero">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </array>
+</resources>

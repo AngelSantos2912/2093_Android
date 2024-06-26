@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4sp"
+    app:cardUseCompatPadding="true"
+    app:cardMaxElevation="5sp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/borde_redondo"
+        android:padding="30sp">
+
+        <TextView
+            android:id="@+id/responsable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fuente"
+            android:text="Director"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+        <ImageButton
+            android:id="@+id/btneliminarEvento"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bxs_trash_alt"
+            android:backgroundTint="@color/rojo" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
