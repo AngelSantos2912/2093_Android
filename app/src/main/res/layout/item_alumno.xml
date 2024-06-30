@@ -16,31 +16,23 @@
         android:paddingBottom="10sp">
 
         <TextView
-            android:id="@+id/lblevento"
+            android:id="@+id/lblalumno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/fuente"
-            android:text="Evento: "
+            android:text="Alumno: "
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginBottom="3sp"/>
 
         <TextView
-            android:id="@+id/lblrazon"
+            android:id="@+id/lblpadres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/fuente"
-            android:text="Razon:"
+            android:text="Padres:"
             android:layout_alignParentStart="true"
-            android:layout_below="@id/lblevento"/>
-        <TextView
-            android:id="@+id/lblfecha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fuente"
-            android:text="Fecha:"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/lblrazon"/>
+            android:layout_below="@id/lblalumno"/>
 
         <RelativeLayout
             android:id="@+id/cldelete"
@@ -51,9 +43,9 @@
             android:layout_marginEnd="5sp">
 
             <ImageButton
-                android:id="@+id/btndeleteevento"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:id="@+id/btndelete"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
                 android:backgroundTint="@color/white"
                 android:src="@drawable/bxs_trash_alt" />
 
@@ -62,7 +54,7 @@
         <View
             android:id="@+id/divider"
             android:layout_width="3dp"
-            android:layout_height="90sp"
+            android:layout_height="60sp"
             android:background="?android:attr/listDivider"
             android:layout_alignStart="@id/cldelete"/>
 

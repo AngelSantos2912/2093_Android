@@ -64,30 +64,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:background="@drawable/borde_redondo"
+        android:layout_height="473dp"
         android:layout_margin="10dp"
+        android:background="@drawable/borde_redondo"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textNombre"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvcolegio"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nombre Aqui"/>
-        <TextView
-            android:id="@+id/textApellido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Apellido aqui"/>
-        <TextView
-            android:id="@+id/textCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Correo Aqui"/>
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" />
 
     </LinearLayout>
-
-
-
 </LinearLayout>
