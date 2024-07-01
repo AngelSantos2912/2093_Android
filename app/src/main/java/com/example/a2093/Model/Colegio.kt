@@ -4,11 +4,11 @@ import java.io.Serializable
 
 class Colegio (
     var id : String,
-    val Apellido : String ?= null,
-    val Nombre : String ?= null,
-    val Correo : String ?= null,
-    val Telefono : Int ?= null,
-    val Genero : Int ?= null,
+    val apellido : String ?= null,
+    val nombre : String ?= null,
+    val correo : String ?= null,
+    val telefono : String ?= null,
+    val genero : Int ?= null,
 ) : Serializable {
-    constructor() : this("", "", "", "", 0, 0)
+    constructor() : this("", "", "", "", "", 0)
 }

@@ -6,6 +6,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -55,7 +56,6 @@ class Registro : AppCompatActivity() {
         }
 
 
-
 //------------------------------------------//
         val btnmatricula = findViewById<ImageButton>(R.id.btnmatricula)
         btnmatricula.setOnClickListener{
@@ -68,6 +68,8 @@ class Registro : AppCompatActivity() {
             val i = Intent(this, Eventos::class.java)
             startActivity(i)
         }
+
+
 //---------------------------------------------//
         val btnhome = findViewById<ImageButton>(R.id.btnhome)
         btnhome.setOnClickListener{
@@ -85,6 +87,9 @@ class Registro : AppCompatActivity() {
             .setPositiveButton("Aceptar"){ _,_ -> dataSource?.eliminarColegio(id){
                 if(it){
                     mensaje("Se elimino el registro")
+                    dataSource?.obtenerColegio { c ->
+                        adapter?.listar(c)
+                    }
                 }else{
                     mensaje("No se pudo eliminar")
                 }
@@ -100,8 +105,18 @@ class Registro : AppCompatActivity() {
     }
 
     private fun modificarColegio(c: Colegio) {
-        TODO("Not yet implemented")
-    }
 
-    //-----------------------------------------------------------//
+        val intent = Intent(this, ActualizarAlumno::class.java)
+        intent.putExtra("id", c.id)
+        intent.putExtra("nombre", c.nombre)
+        intent.putExtra("apellido", c.apellido)
+        intent.putExtra("correo", c.correo)
+        intent.putExtra("telefono", c.telefono)
+        intent.putExtra("genero", c.genero.toString())
+        startActivity(intent)
+    }
 }
+
+
+
+

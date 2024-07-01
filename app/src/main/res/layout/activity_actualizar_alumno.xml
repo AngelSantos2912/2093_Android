@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/azul"
-    tools:context=".Matricula">
+    tools:context=".ActualizarAlumno">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Matricula"
+            android:text="Actualizar"
             android:background="@drawable/borde_titulo"
             android:layout_margin="5dp"
             android:textAlignment="center"
@@ -45,19 +45,6 @@
             android:background="@drawable/home" />
 
 
-        <ImageButton
-            android:id="@+id/btneventos"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/news" />
-
-        <ImageButton
-            android:id="@+id/btnregistro"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/registro" />
 
 
     </LinearLayout>
@@ -68,16 +55,28 @@
         android:layout_margin="15dp"
         android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/txtnombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:textAlignment="center"
-                android:fontFamily="@font/fuente"
-                android:hint="Nombre "
-                android:background="@drawable/borde_redondo"
-                android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/txtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/fuente"
+            android:visibility="gone"
+            android:hint="ID "
+            android:background="@drawable/borde_redondo"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/fuente"
+            android:hint="Nombre "
+            android:background="@drawable/borde_redondo"
+            android:textColor="@color/black"/>
         <EditText
             android:id="@+id/txtapellido"
             android:layout_width="match_parent"
@@ -120,37 +119,37 @@
             android:layout_margin="10dp"
             android:background="@drawable/borde_redondo"
             android:entries="@array/Genero"/>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:padding="5dp"
-    android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnRegistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_margin="5dp"
-        android:text="Registrar"
-        android:fontFamily="@font/fuente"
-        android:textColor="@color/black"
-        android:shadowColor="@color/crema"/>
-    <Button
-        android:id="@+id/btnCancelar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_margin="5dp"
-        android:text="Cancelar"
-        android:fontFamily="@font/fuente"
-        android:textColor="@color/black"
-        android:shadowColor="@color/crema"/>
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:text="Actualizar"
+                android:fontFamily="@font/fuente"
+                android:textColor="@color/black"
+                android:shadowColor="@color/crema"/>
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:text="Cancelar"
+                android:fontFamily="@font/fuente"
+                android:textColor="@color/black"
+                android:shadowColor="@color/crema"/>
 
 
 
-</LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
