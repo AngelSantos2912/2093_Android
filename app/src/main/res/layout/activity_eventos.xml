@@ -69,6 +69,17 @@
 
     </LinearLayout>
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="473dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/borde_redondo"
+        android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rveventos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+    </LinearLayout>
 
 </LinearLayout>
