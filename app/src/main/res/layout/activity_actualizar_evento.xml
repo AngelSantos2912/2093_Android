@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/azul"
-    tools:context=".addEvent">
+    tools:context=".ActualizarEvento">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Añadir Evento"
+            android:text="Actualizar Evento"
             android:background="@drawable/borde_titulo"
             android:layout_margin="5dp"
             android:textAlignment="center"
@@ -101,12 +101,12 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnRegistroEvento"
+                android:id="@+id/btnActualizarEvento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:layout_margin="5dp"
-                android:text="Registrar"
+                android:text="Actualizar"
                 android:fontFamily="@font/fuente"
                 android:textColor="@color/black"
                 android:shadowColor="@color/crema"/>
@@ -122,9 +122,9 @@
                 android:shadowColor="@color/crema"/>
 
 
-
         </LinearLayout>
 
     </LinearLayout>
 
 </LinearLayout>
+
