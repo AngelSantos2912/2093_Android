@@ -68,6 +68,15 @@
         android:layout_margin="15dp"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese sus datos de manera correcta"
+            android:fontFamily="@font/fuente"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
             <EditText
                 android:id="@+id/txtnombre"
                 android:layout_width="match_parent"
