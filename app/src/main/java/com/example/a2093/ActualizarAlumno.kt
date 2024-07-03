@@ -130,18 +130,4 @@ class ActualizarAlumno : AppCompatActivity() {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -60,6 +60,17 @@
             android:layout_margin="10dp"
             android:textAlignment="center"
             android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/txtidevento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:fontFamily="@font/fuente"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:background="@drawable/borde_redondo"/>
 
         <EditText
             android:id="@+id/txtrazon"
